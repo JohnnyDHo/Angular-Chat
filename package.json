@@ -1,0 +1,27 @@
+{
+  "name": "Angular-Chat",
+  "version": "1.0.0",
+  "description": "Basically https://pusher.com/tutorials/private-rooms-angular-chat but deployed to Heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnnyDHo/Angular-Chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnnyDHo/Angular-Chat/issues"
+  },
+  "homepage": "https://github.com/JohnnyDHo/Angular-Chat#readme",
+  "dependencies": {
+    "@pusher/chatkit-server": "^1.1.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.0"
+  }
+}
