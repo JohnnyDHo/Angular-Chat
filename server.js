@@ -12,6 +12,10 @@ const chatkit = new Chatkit.default({
 	key: process.env.CHATKIT_SECRET_KEY
 });
 
+// Create link to Angular build directory
+var distDir = __dirname + '/dist/';
+app.use(express.static(distDir));
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
