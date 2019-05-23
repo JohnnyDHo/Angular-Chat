@@ -20,6 +20,24 @@ export class AppComponent {
 		isPrivate: false
 	};
 	joinableRooms = [];
+	newUser = '';
+
+	addUserToRoom() {
+		const { newUser, currentUser, currentRoom } = this;
+		currentUser
+			.addUserToRoom({
+				userId: newUser,
+				roomId: currentRoom.id
+			})
+			.then(currentRoom => {
+				this.roomUsers = currentRoom.users;
+			})
+			.catch(err => {
+				console.log(`Error adding user: ${err}`);
+			});
+
+		this.newUser = '';
+	}
 
 	createRoom() {
 		const {
