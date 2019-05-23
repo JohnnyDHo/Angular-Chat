@@ -2,6 +2,9 @@
 	"name": "Angular-Chat",
 	"version": "1.0.0",
 	"description": "Basically https://pusher.com/tutorials/private-rooms-angular-chat but deployed to Heroku",
+	"engines": {
+		"node": "10.15.3"
+	},
 	"main": "index.js",
 	"scripts": {
 		"ng": "ng",
